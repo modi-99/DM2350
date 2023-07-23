@@ -1,34 +1,49 @@
-    <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Go by the Rythm</title>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show me figures</title>
+</head>
 <body>
+        <div id="images"> 
+            <audio src="audio.mp3" controls autoplay loop></audio>
+            <h2 id="question1">Choose the identical image</h2> <h2 id="question2">Choose the odd image</h2> 
+                <img src="/images/blueCircle.png" id="sourceImg">
+            
+            <div>
+                <img src="images/greenCircle.png" id="firstAlternative" class="choosenImg" onclick="nextImg()" >
+                <img src="images/redCircle.png" id="secondAlternative" class="choosenImg" onclick="nextImg()" >
+                <img src="images/yellowCircle.png" id="thirdAlternative" class="choosenImg" onclick="nextImg()" >
+                <img src="images/blueCircle.png" id="fourthAlternative" class="choosenImg" onclick="nextImg()" >
+            </div>
+            <div id="popup">
+                <h2>You are now submiting your answer</h2>
+                <div class="container">
+                    <button id="submitAnswer">Submit</button> 
+                    <button id="cancel">cancel</button>
+                </div>
+                
+                
+            </div>
 
-    <div class="question">
-        <p id="Qs"></p>
+            <br>
+        <table id="contentTable">
+            <thead>
+                <tr>
+                    <th>KEY</th>
+                    <th>Click 1</th>
+                    <th>Click 2</th>
+                </tr>
+            </thead>
+            <tbody id="tableData"></tbody>
+        </table>
+        </div>
+
         
-    </div>
-    
-    <div class="wrapper">
-        <button id="increment" >YES</button>
-        <button id="decrement" >NO</button>
-    
-  
-    </div>
-    
-    <p id="counter">Amount of questions Remaining: </p>
-    <span id="sec">00</span>:<span id="ms">00</span>
-
-     <p id="uName"></p>
-     <p id="uAge"></p>
-
-    
+   
 </body>
-</html>
 <script src="script.js"></script>
+</html>

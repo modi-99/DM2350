@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go by the Rythm</title>
+    <title>Show me figures</title>
 </head>
 <body>
     <div id="startPageWrapper">
-        <p class="intro">Before you get started enter the information below</p>
-
+        <h3 class="intro">Before you get started enter the information below</h3>
+        <form action="index.html" method="get">
             <div class="userInformation">
                 <input type="text" id="name" placeholder="Firstname & lastname" value="">
                 <br>
                 <br>
-                <input type="text" id="age" placeholder="How old are you" value="">  
+                <input type="text" id="age" placeholder="How old are you" value="">
+                <br>
+                <br>
+                <input type="text" id="ethnicity" placeholder="your ethnicity" value="">   
+                <button id="start" onclick="handleLocalStorage()">Lets get started</button>
             </div>
+        </form>
     </div>
-    <a href="index.html">
-        <button id="start">Lets get started</button>
-    </a>
         
 </div>
 </body>
